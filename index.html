@@ -29,13 +29,14 @@
 <script>
 //gombok létrehozása
 let gomb_tarolo=document.getElementById("gombok");
-for(let i=1; i<=9; i++){
+for(let i=1; i<dito_kepek.lenght; i++){
 gomb_tarolo.innerHTML+='<button onclick="katt('+i+')">'+ i +"</button>"
 }
 function katt(szam){
 document.getElementById("kepernyo").innerHTML=szam;
 }
 //Üdítők felpakolása
+let udito_kepek = ["apenta.jpg", "cocacola.png", "cola.jpg", "hellkave.jpg", "kinley.jpg", "marka.jpg"]
 let uditok=document.getElementById("bal");
 for(let i=0;i<3;i++){
 uditok.innerHTML+='<img src="viz.png">'
